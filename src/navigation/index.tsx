@@ -9,17 +9,26 @@ import { Image } from 'react-native';
 import bell from '../assets/bell.png';
 import newspaper from '../assets/newspaper.png';
 import { Home } from './screens/Home';
-import { Profile } from './screens/Profile';
+import {Profile}  from './screens/Profile';
 import { Settings } from './screens/Settings';
 import { Updates } from './screens/Updates';
 import { NotFound } from './screens/NotFound';
+import {Login} from './screens/Login';
+import {Register} from './screens/Register';
+import { CreateEvent } from './screens/Events/CreateEvent';
+import { EventsList } from './screens/Events/EventList';
+import 'react-native-get-random-values';
+import { EventDetails }  from './screens/Events/EventDetails';
 
+import { RequireAuth } from '../components/RequireAuth';
+import { handleLogout } from '../services/AuthService';
 const HomeTabs = createBottomTabNavigator({
   screens: {
     Home: {
       screen: Home,
       options: {
-        title: 'Feed',
+        title: 'Home',
+        headerShown: false, // Hide the header for Home tab
         tabBarIcon: ({ color, size }) => (
           <Image
             source={newspaper}
@@ -32,8 +41,8 @@ const HomeTabs = createBottomTabNavigator({
         ),
       },
     },
-    Updates: {
-      screen: Updates,
+    Events: {
+      screen: EventsList,
       options: {
         tabBarIcon: ({ color, size }) => (
           <Image
@@ -47,7 +56,24 @@ const HomeTabs = createBottomTabNavigator({
         ),
       },
     },
+    Profile: {
+      screen: Profile,
+      options: {
+        tabBarIcon: ({ color, size }) => (
+          <Image
+            source={bell}
+            tintColor={color}
+            style={{ width: size, height: size }}
+          />
+        ),
+      
+      },
+    },
+    
+    
+    
   },
+  
 });
 
 const RootStack = createNativeStackNavigator({
@@ -59,20 +85,53 @@ const RootStack = createNativeStackNavigator({
         headerShown: false,
       },
     },
-    Profile: {
-      screen: Profile,
-      linking: {
-        path: ':user(@[a-zA-Z0-9-_]+)',
-        parse: {
-          user: (value) => value.replace(/^@/, ''),
-        },
-        stringify: {
-          user: (value) => `@${value}`,
-        },
-      },
+   
+    Login: {
+      screen: Login,
+      options: ({ navigation }) => ({
+        presentation: 'modal',
+        headerRight: () => (
+          <HeaderButton onPress={navigation.goBack}>
+            <Text>Close</Text>
+          </HeaderButton>
+        ),
+      }),
     },
-    Settings: {
-      screen: Settings,
+    Register: {
+      screen: Register,
+      options: ({ navigation }) => ({
+        presentation: 'modal',
+        headerRight: () => (
+          <HeaderButton onPress={navigation.goBack}>
+            <Text>Close</Text>
+          </HeaderButton>
+        ),
+      }),
+    },
+    CreateEvent: {
+      screen: CreateEvent,
+      options: ({ navigation }) => ({
+        presentation: 'modal',
+        headerRight: () => (
+          <HeaderButton onPress={navigation.goBack}>
+            <Text>Close</Text>
+          </HeaderButton>
+        ),
+      }),
+    },
+    EventsList: {
+      screen: EventsList,
+      options: ({ navigation }) => ({
+        presentation: 'modal',
+        headerRight: () => (
+          <HeaderButton onPress={navigation.goBack}>
+            <Text>Close</Text>
+          </HeaderButton>
+        ),
+      }),
+    },
+    EventDetails: {
+      screen: EventDetails,
       options: ({ navigation }) => ({
         presentation: 'modal',
         headerRight: () => (
