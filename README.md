@@ -38,7 +38,7 @@ A React Native mobile app that allows users to discover food-related events, RSV
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/food-events-app.git
+git clone https://github.com/swachchhakh/food-events-app.git
 cd food-events-app
 
 1. Create a new project using this template:
