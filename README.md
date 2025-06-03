@@ -60,7 +60,7 @@ A React Native mobile app that allows users to discover food-related events, RSV
 </details>
 
 
-![App Screenshot]([https://raw.githubusercontent.com/your-username/your-repo-name/main/screenshot.png](https://github.com/swachchhakh/food-events-app/blob/main/1.jpeg))
+
 
 ## 📦 Installation & Setup
 
