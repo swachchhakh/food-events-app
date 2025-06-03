@@ -32,8 +32,9 @@ A React Native mobile app that allows users to discover food-related events, RSV
 - **AsyncStorage**
 - **React Navigation**
 
----
-├── components/
+<details>
+   <summary>
+   ├── components/
    ├── CommentsSection.tsx
    ├── GooglePlacesApi.js
    ├── Rsvp.tsx
@@ -48,14 +49,16 @@ A React Native mobile app that allows users to discover food-related events, RSV
      ├── Event/
         ├── EventDetails.tsx
         ├── CreateEvent.tsx
-        ├── EventList.tsx
-      
+        ├── EventList.tsx     
 ├── services/
 │   ├── firebaseConfig.ts
     ├── AuthService.ts
 ├── App.tsx
 ├── package.json
 └── README.md
+</summary>
+</details>
+
 
 
 ## 📦 Installation & Setup
