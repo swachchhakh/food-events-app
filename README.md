@@ -40,6 +40,8 @@ A React Native mobile app that allows users to discover food-related events, RSV
 ```bash
 git clone https://github.com/swachchhakh/food-events-app.git
 cd food-events-app
+yarn install/ npm install
+npx expo start -c   
 
 1. Create a new project using this template:
 
