@@ -1,17 +1,45 @@
-# Starter Template with React Navigation
+# 🍽️ Food Events App
 
-This is a minimal starter template for React Native apps using Expo and React Navigation.
+A React Native mobile app that allows users to discover food-related events, RSVP, and engage through comments. Built with Firebase for real-time interaction and authentication.
 
-It includes the following:
+---
 
-- Example [Native Stack](https://reactnavigation.org/docs/native-stack-navigator) with a nested [Bottom Tab](https://reactnavigation.org/docs/bottom-tab-navigator)
-- Web support with [React Native for Web](https://necolas.github.io/react-native-web/)
-- TypeScript support and configured for React Navigation
-- Automatic deep link and URL handling configuration
-- Expo [Development Build](https://docs.expo.dev/develop/development-builds/introduction/) with [Continuous Native Generation](https://docs.expo.dev/workflow/continuous-native-generation/)
-- Edge-to-edge configured on Android with [`react-native-edge-to-edge`](https://www.npmjs.com/package/react-native-edge-to-edge)
+## 🚀 Features
 
-## Getting Started
+- 🔥 Real-time event listing
+- ✅ RSVP support (Going / Not Going)
+- 💬 Comment section with live updates
+- 🔐 Firebase Auth (Email/Password)
+- 🖼️ Event images & details
+- 📱 Keyboard-aware UI
+
+---
+
+## 👨‍💻 Team Roles
+
+| Member         | Role                       | Responsibilities                              |
+|----------------|----------------------------|-----------------------------------------------|
+| Aftab Miraj    | Full-Stack Developer       | React Native UI, Firebase integration, Comments, RSVP |
+| Noble Kodie   | UI/UX Designer (Optional)  | Wireframes, design systems (Figma, etc.)       |
+
+
+
+## 🛠️ Tech Stack
+
+- **React Native (with Expo)**
+- **Firebase (Auth + Realtime Database)**
+- **TypeScript / JavaScript**
+- **AsyncStorage**
+- **React Navigation**
+
+---
+
+## 📦 Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/food-events-app.git
+cd food-events-app
 
 1. Create a new project using this template:
 
