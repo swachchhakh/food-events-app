@@ -1,4 +1,4 @@
-# 🍽️ Food Events App
+# 🍽️ Food Event Meetup App
 
 A React Native mobile app that allows users to discover food-related events, RSVP, and engage through comments. Built with Firebase for real-time interaction and authentication.
 
@@ -33,6 +33,30 @@ A React Native mobile app that allows users to discover food-related events, RSV
 - **React Navigation**
 
 ---
+├── components/
+   ├── CommentsSection.tsx
+   ├── GooglePlacesApi.js
+   ├── Rsvp.tsx
+├── navigation/
+    ├── screens/
+     ├── Home.tsx
+     ├── CreateEvent.tsx
+     ├── Home.tsx
+     ├── Login.tsx
+     ├── Register.tsx
+     ├── Profile.tsx
+     ├── Event/
+        ├── EventDetails.tsx
+        ├── CreateEvent.tsx
+        ├── EventList.tsx
+      
+├── services/
+│   ├── firebaseConfig.ts
+    ├── AuthService.ts
+├── App.tsx
+├── package.json
+└── README.md
+
 
 ## 📦 Installation & Setup
 
