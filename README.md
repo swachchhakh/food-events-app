@@ -20,7 +20,7 @@ A React Native mobile app that allows users to discover food-related events, RSV
 | Member         | Role                       | Responsibilities                              |
 |----------------|----------------------------|-----------------------------------------------|
 | Aftab Miraj    | Full-Stack Developer       | React Native UI, Firebase integration, Comments, RSVP |
-| Noble Kodie   | UI/UX Designer (Optional)  | Wireframes, design systems (Figma, etc.)       |
+| Noble Kodie   | UI/UX Designer  | Wireframes, design systems (Figma, etc.)       |
 
 
 
