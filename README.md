@@ -1,21 +1,29 @@
-# 🍽️ Food Event Meetup App
+# EventMate - Food Event Meetup App
 
-A React Native mobile app that allows users to discover food-related events, RSVP, and engage through comments. Built with Firebase for real-time interaction and authentication.
-
+EventMate is a React Native mobile application designed to connect food lovers and community members through local social events. Built using Firebase and TypeScript, this app allows users to discover nearby events, RSVP instantly, and interact with others via live comments — all from their mobile devices. The goal of the project was to create an intuitive, community-driven platform where event participation and engagement feel seamless.
 ---
 
-## 🚀 Features
+Core Features
 
-- 🔥 Real-time event listing
-- ✅ RSVP support (Going / Not Going)
-- 💬 Comment section with live updates
-- 🔐 Firebase Auth (Email/Password)
-- 🖼️ Event images & details
-- 📱 Keyboard-aware UI
+1. Event Discovery: Browse a curated list of local food and social events with engaging visuals and live data from Firebase Realtime Database.
 
----
+2. Event Creation: Logged-in users can host their own events, complete with event image, location (via Google Places API), date, and description.
 
-## 👨‍💻 Team Roles
+3. RSVP System: Users can RSVP in real-time — the system updates instantly, showing who’s attending (“going”) through live Firebase sync.
+
+4. Comments Section: Each event includes a comment section for users to share thoughts, feedback, or plans. Built for real-time updates without page reloads.
+
+5. Authentication & Session Management: Firebase Authentication handles secure sign-up, login, and persistent sessions using AsyncStorage.
+
+6. Google Places Integration: Seamless autocomplete for event locations while creating new events.
+
+7. Responsive Theming: Adaptive design that supports both light and dark modes for better user experience.
+
+8. User Profile Management: Each user can manage their profile and view their RSVP’d events.
+
+
+
+
 
 | Member         | Role                       | Responsibilities                              |
 |----------------|----------------------------|-----------------------------------------------|
@@ -24,48 +32,53 @@ A React Native mobile app that allows users to discover food-related events, RSV
 
 
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **React Native (with Expo)**
-- **Firebase (Auth + Realtime Database)**
-- **TypeScript / JavaScript**
-- **AsyncStorage**
-- **React Navigation**
+Frontend: React Native (Expo), TypeScript
+
+Backend: Firebase (Auth, Realtime Database, Hosting)
+
+APIs: Google Places API
+
+UI/UX: React Native Paper, Styled Components
+
+Navigation: React Navigation
+
+Storage: AsyncStorage for session and local cache
 
 <details>
    <summary>
-   ├── components/
-   ├── CommentsSection.tsx
-   ├── GooglePlacesApi.js
-   ├── Rsvp.tsx
-├── navigation/
-    ├── screens/
-     ├── Home.tsx
-     ├── CreateEvent.tsx
-     ├── Home.tsx
-     ├── Login.tsx
-     ├── Register.tsx
-     ├── Profile.tsx
-     ├── Event/
-        ├── EventDetails.tsx
-        ├── CreateEvent.tsx
-        ├── EventList.tsx     
-├── services/
-│   ├── firebaseConfig.ts
-    ├── AuthService.ts
-├── App.tsx
-├── package.json
-└── README.md
-</summary>
+         ├── components/
+         ├── CommentsSection.tsx
+         ├── GooglePlacesApi.js
+         ├── Rsvp.tsx
+      ├── navigation/
+          ├── screens/
+           ├── Home.tsx
+           ├── CreateEvent.tsx
+           ├── Home.tsx
+           ├── Login.tsx
+           ├── Register.tsx
+           ├── Profile.tsx
+           ├── Event/
+              ├── EventDetails.tsx
+              ├── CreateEvent.tsx
+              ├── EventList.tsx     
+      ├── services/
+      │   ├── firebaseConfig.ts
+          ├── AuthService.ts
+      ├── App.tsx
+      ├── package.json
+      └── README.md
+  </summary>
 </details>
 
 
 
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
-```bash
 git clone https://github.com/swachchhakh/food-events-app.git
 cd food-events-app
 yarn install/ npm install
@@ -74,35 +87,28 @@ npx expo start -c
 
 1. Create a new project using this template:
 
-   ```sh
-   npx create-expo-app@latest --template react-navigation/template
-   ```
+npx create-expo-app@latest --template react-navigation/template
 
-2. Edit the `app.json` file to configure the `name`, `slug`, `scheme` and bundle identifiers (`ios.bundleIdentifier` and `android.bundleIdentifier`) for your app.
+2. Edit the "app.json" file to configure the `name`, `slug`, `scheme` and bundle identifiers (`ios.bundleIdentifier` and `android.bundleIdentifier`) for your app.
 
-3. Edit the `src/App.tsx` file to start working on your app.
+3. Edit the "src/App.tsx" file to start working on your app.
 
 ## Running the app
 
 - Install the dependencies:
-
-  ```sh
   npm install
-  ```
+  
 
 - Start the development server:
 
-  ```sh
   npm start
-  ```
+
 
 - Build and run iOS and Android development builds:
-
-  ```sh
   npm run ios
   # or
   npm run android
-  ```
+  
 
 - In the terminal running the development server, press `i` to open the iOS simulator, `a` to open the Android device or emulator, or `w` to open the web browser.
 
