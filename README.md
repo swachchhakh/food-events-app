@@ -1,6 +1,8 @@
 # EventMate - Food Event Meetup App
 
-EventMate is a React Native mobile application designed to connect food lovers and community members through local social events. Built using Firebase and TypeScript, this app allows users to discover nearby events, RSVP instantly, and interact with others via live comments — all from their mobile devices. The goal of the project was to create an intuitive, community-driven platform where event participation and engagement feel seamless.
+EventMate is a React Native mobile application designed to connect food lovers and community members through local social events.
+Built using Firebase and TypeScript, this app allows users to discover nearby events, RSVP instantly, and interact with others via live comments — all from their mobile devices. 
+The goal of the project was to create an intuitive, community-driven platform where event participation and engagement feel seamless.
 ---
 
 Core Features
